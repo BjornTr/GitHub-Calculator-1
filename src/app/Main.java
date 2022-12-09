@@ -5,19 +5,31 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("My app for Users!");
         System.out.println("Version 1.0");
-        int a = 8;
-        int b = 2;
-        int c = add(a, b);
+        double num1 = 8;
+        double num2 = 2;
+        double c = add(num1, num2);
         System.out.println(c);
-        int d = multiply(a, b);
+        double d = multiply(num1, num2);
         System.out.println(d);
+        double resultDivide = divide(num1, num2);
+        System.out.println(resultDivide);
+        double resultSubtract = subtract(num1, num2);
+        System.out.println(resultSubtract);
     }
 
-    private static int add(int a, int b) {
+    private static double add(double a, double b) {
         return a + b;
     }
 
-    private static int multiply(int a, int b) {
+    private static double multiply(double a, double b) {
         return a * b;
+    }
+
+    private static double divide(double num1, double num2) {
+        return num1 / num2;
+    }
+
+    private static double subtract(double num1, double num2) {
+        return num1 - num2;
     }
 }
