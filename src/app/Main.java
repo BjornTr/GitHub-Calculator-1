@@ -7,19 +7,19 @@ public class Main {
 
     static double num1;
     static double num2;
+
     public static void main(String[] args) {
-        System.out.println("My app for Users!");
-        System.out.println("Version 1.0");
+        baseInfo();
         inputs();
         results();
     }
 
-    private static double add(double a, double b) {
-        return a + b;
+    private static double add(double num1, double num2) {
+        return num1 + num2;
     }
 
-    private static double multiply(double a, double b) {
-        return a * b;
+    private static double multiply(double num1, double num2) {
+        return num1 * num2;
     }
 
     private static double divide(double num1, double num2) {
@@ -36,6 +36,11 @@ public class Main {
         num1 = scanner.nextDouble();
         System.out.println("Please enter num 2: ");
         num2 = scanner.nextDouble();
+    }
+
+    private static void baseInfo() {
+        System.out.println("Calculator for base calculations"
+                + "\nVersion 1.0");
     }
 
     private static void results() {
