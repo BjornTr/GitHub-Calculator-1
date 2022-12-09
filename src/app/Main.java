@@ -40,7 +40,7 @@ public class Main {
 
     private static void baseInfo() {
         System.out.println("Calculator for base calculations"
-                + "\nVersion 1.0");
+                + "\nVersion 2.0");
     }
 
     private static void results() {
