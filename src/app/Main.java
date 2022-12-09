@@ -11,14 +11,7 @@ public class Main {
         System.out.println("My app for Users!");
         System.out.println("Version 1.0");
         inputs();
-        double c = add(num1, num2);
-        System.out.println(c);
-        double d = multiply(num1, num2);
-        System.out.println(d);
-        double resultDivide = divide(num1, num2);
-        System.out.println(resultDivide);
-        double resultSubtract = subtract(num1, num2);
-        System.out.println(resultSubtract);
+        results();
     }
 
     private static double add(double a, double b) {
@@ -43,5 +36,16 @@ public class Main {
         num1 = scanner.nextDouble();
         System.out.println("Please enter num 2: ");
         num2 = scanner.nextDouble();
+    }
+
+    private static void results() {
+        double resultAdd = add(num1, num2);
+        System.out.println(resultAdd);
+        double resultMultiply = multiply(num1, num2);
+        System.out.println(resultMultiply);
+        double resultDivide = divide(num1, num2);
+        System.out.println(resultDivide);
+        double resultSubtract = subtract(num1, num2);
+        System.out.println(resultSubtract);
     }
 }
